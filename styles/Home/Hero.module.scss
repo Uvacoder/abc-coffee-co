@@ -1,42 +1,46 @@
 @use '../variables' as V;
 
-
 .container {
     width: 90%;
     height: auto;
     margin: 0 auto;
 }
 
-
 .img {
-    height: 600px;
+    height: auto;
     border-radius: 15px;
 }
 
 .textContainer {
-    width: 500px;
-    height: 400px;
-    border: 1px solid red;
+    width: 550px;
+    height: auto;
     position: absolute;
-    top: 20%;;
+    top: 20%;
     left: 10%;
     h1 {
         color: V.$lightCream;
         font-family: V.$fraunce;
-        font-size: 3.5rem;
+        font-size: 4.75rem;
+        line-height: 1;
     }
     p {
+
         color: V.$grey;
         width: 420px;
         line-height: 1.5;
+        margin-top: -2rem;
         margin-bottom: 4rem;
     }
     a {
         color: V.$lightCream;
         background-color: V.$DarkCyan;
-        padding: 1rem 1.5rem;
-        border-radius: 10px;
+        padding: 1rem 1.75rem;
+        font-size: 1.20rem;
+        border-radius: 5px;
         font-family: V.$fraunce;
         font-weight: 700;
+    }
+    a:hover {
+        filter: brightness(150%);
     }
 }

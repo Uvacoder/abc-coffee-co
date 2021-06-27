@@ -13,10 +13,10 @@ export default function Header() {
                 <Link href="/">
                     <a className={styles.a} >HOME</a>
                 </Link>
-                <Link href="about">
+                <Link href="/about">
                     <a className={styles.a} >ABOUT US</a>
                 </Link>     
-                <Link href="subscribe">
+                <Link href="/subscribe">
                     <a className={styles.a} >CREATE YOUR PLAN</a>
                 </Link> 
                 </nav>
