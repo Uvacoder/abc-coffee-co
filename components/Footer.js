@@ -1,21 +1,25 @@
 import styles from '../styles/Footer.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
 
     return (
         <div className={styles.container}>
-            
             <div className={styles.leftFlexContainer}>
                 <Image src="/../public/assets/shared/desktop/logo-footer.svg" alt="coffee roasters logo" width="236" height="26" />
-                <ul className={styles.ul}>
-                    <li className={styles.li}>HOME</li>
-                    <li className={styles.li}>ABOUT US</li>
-                    <li className={styles.li}>CREATE YOUR PLAN</li>
-                </ul>
-
+                <nav className={styles.nav}>
+                    <Link href="/">
+                        <a className={styles.a}>HOME</a>
+                    </Link>
+                    <Link href="about">
+                        <a className={styles.a}>ABOUT US</a>
+                    </Link>
+                    <Link href="subscribe">
+                        <a className={styles.a}>CREATE YOUR PLAN</a>
+                    </Link>
+                </nav>
             </div>
-                
             <div className={styles.rightFlexContainer}>
                 <Image src="/../public/assets/shared/desktop/icon-facebook.svg" alt="coffee roasters logo" width="24" height="24"  className={styles.svg}/>
                 <Image src="/../public/assets/shared/desktop/icon-twitter.svg" alt="coffee roasters logo" width="24" height="24"  className={styles.svg}/>

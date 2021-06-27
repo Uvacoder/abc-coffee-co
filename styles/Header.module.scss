@@ -17,7 +17,7 @@
 }
 
 
-.ul {
+.nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -25,16 +25,15 @@
     align-items: center;
 }
 
-.li {
+.a {
     color: V.$grey;
     display: inline;
     font-size: .8rem;
     font-family: V.$barlow;
     font-weight: 600;
-    margin-left: -2rem;
 }
 
-.li:hover {
+.a:hover {
     cursor: pointer;
     color: V.$DarkGreyBlue;
 }
