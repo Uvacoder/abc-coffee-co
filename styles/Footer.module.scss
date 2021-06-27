@@ -1,5 +1,56 @@
 @use 'variables' as V;
 
 .container {
-    background-color: V.$DarkCyan;
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    background-color: V.$DarkGreyBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 88px;
+}
+
+.leftFlexContainer {
+    width: 625px;
+    height: 26px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+
+
+.ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    height: auto;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.li {
+    color: V.$grey;
+    display: inline;
+    font-size: .8rem;
+    font-family: V.$barlow;
+    font-weight: 600;
+    margin-left: -2rem;
+}
+
+.li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.rightFlexContainer {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 1.5rem;
+}
+
+.svg:hover {
+    cursor: pointer;
 }
