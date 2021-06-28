@@ -1,0 +1,51 @@
+@use '../variables' as V;
+
+.container {
+    border: 1px solid blue;
+    width: 80%;
+    height: 900px;
+    margin: 10rem auto 0 auto;
+}
+
+.lead {
+    color: V.$grey;
+    font-size: 1.5rem;
+    font-family: V.$fraunce;
+    font-weight: 700;
+}
+
+.lineBox {
+    margin-top: 4.25rem;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid V.$DarkCyan;
+    border-radius: 50%;
+}
+
+.line {
+    width: 45%;
+    border-bottom: 2px solid V.$PaleOrange;
+}
+
+.optionContainer {
+    width: 90%;
+    height: 400px;
+    border: 1px solid orange;
+    margin-top: 4.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.optionBox {
+    width: 30%;
+    border: 1px solid red;
+}
