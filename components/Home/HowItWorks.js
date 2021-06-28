@@ -1,5 +1,5 @@
 import styles from '../../styles/Home/HowItWorks.module.scss'
-import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HowItWorks() {
 
@@ -29,9 +29,10 @@ export default function HowItWorks() {
                     <h3>Receive and enjoy!</h3>
                     <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
                 </div>
-
             </div>
-            
+            <Link href="subscribe">
+                    <a className={styles.a} >Create your plan</a>
+            </Link>
         </div>
     )
 }
