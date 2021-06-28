@@ -15,10 +15,9 @@
 }
 
 .grayTextContainer {
-    border: 1px solid red;
     width: 540px;
     margin:  0 auto;
-    padding-top: 4rem;
+    padding: 4rem 0;
     text-align: center;
     h2 {
         color: V.$lightCream;
@@ -34,8 +33,48 @@
 } 
 
 .aboveFlexContainer {
-        width: 80%;
+        width: 90%;
         height: 382px;
-        background-color: red;
         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+}
+
+.featureBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 382px;
+    background-color: V.$DarkCyan;
+    border-radius: 10px;
+    .imgContainer {
+        margin-top: 4.2rem;
     }
+    .textContainer {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       h3 {
+        color: V.$lightCream;
+        font-family: V.$fraunce;
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: V.$lightCream;
+        font-family: V.$barlow;
+        text-align: center;
+        width: 95%;
+        margin-top: 0;
+    } 
+    }
+}
