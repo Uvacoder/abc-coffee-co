@@ -1,0 +1,38 @@
+@use '../variables' as V;
+
+.container {
+    width: 90%;
+    height: auto;
+    margin: 10.25rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imgContainer {
+    width: auto;
+    display: flex;
+    margin-left: 5%;
+    img {
+        border-radius: 10px;
+    }
+}
+
+.textContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        color: V.$DarkGreyBlue;
+        font-family: V.$fraunce;
+        font-size: 2.6rem;
+    }
+    p {
+        color: V.$DarkGreyBlue;
+        font-family: V.$barlow;
+        line-height: 1.75;
+        margin-top: 0;
+        width: 83%;
+    }
+}
