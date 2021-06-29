@@ -1,0 +1,33 @@
+@use '../variables' as V;
+
+.container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.img {
+    height: auto;
+    border-radius: 15px;
+}
+
+.textContainer {
+    width: 550px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    h2 {
+        color: V.$lightCream;
+        font-family: V.$fraunce;
+        font-size: 2.6rem;
+    }
+    p {
+        color: V.$lightCream;
+        font-family: V.$barlow;
+        width: 420px;
+        line-height: 1.5;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
