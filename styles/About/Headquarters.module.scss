@@ -1,0 +1,41 @@
+@use '../variables' as V;
+
+.container {
+    margin: 9rem auto 2.75rem auto;
+    height: 500px;
+    width: 90%;
+}
+
+.headline {
+    color: V.$grey;
+    margin-left: 7.5%;
+    margin-bottom: 4.5rem;
+    font-family: V.$fraunce;
+    font-size: 1.55rem;
+}
+    
+.flexContainer {
+    width: 85%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.countryBox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: V.$DarkGreyBlue;
+        font-family: V.$fraunce;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        margin-top: .5rem;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+}
