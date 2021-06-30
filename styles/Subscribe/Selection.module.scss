@@ -29,6 +29,10 @@
     border-bottom: 1px solid rgba(131,136,143, .5);
 }
 
+.selectionName:hover {
+    cursor: pointer;
+}
+
 .selectionName:last-child {
     border-bottom: none;
 }
@@ -41,8 +45,63 @@
 .selectionDropDownBox {
     border: 1px solid red;
     height: 400px;
+    margin-bottom: 3rem;
 }
 
 .selectionTitleContainer {
     border: 1px solid green;
+    font-family: V.$fraunce;
+    color: V.$grey;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.downArrow:hover {
+    cursor: pointer;
+}
+
+.upArrow {
+    display: none;
+}
+
+.upArrow:hover {
+    cursor: pointer;
+}
+
+.choiceBoxContainer {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choiceBox {
+    background-color: #F4F1EB;
+    width: 31%;
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 2.5rem;
+    h4 {
+        color: V.$DarkGreyBlue;
+        font-family: V.$fraunce;
+        font-size: 1.5rem;
+    }
+    p {
+        margin-top: 0;
+        color: V.$DarkGreyBlue;
+        font-family: V.$barlow;
+        line-height: 1.5;
+    }
+}
+
+.choiceBox:hover {
+    background-color: V.$PaleOrange;
+    cursor: pointer;
+}
+
+
