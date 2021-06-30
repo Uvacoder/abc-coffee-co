@@ -1,0 +1,91 @@
+@use '../variables' as V;
+
+.container {
+    width: 90%;
+    height: auto;
+    margin: 5rem auto 0 auto;
+    padding-bottom: 100px;
+}
+
+.grayContainer {
+    background-color: V.$DarkGreyBlue;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem 5px 2rem;
+    border-radius: 10px;
+}
+
+.lead {
+    color: V.$grey;
+    font-size: 1.5rem;
+    font-family: V.$fraunce;
+    font-weight: 700;
+}
+
+.lineBox {
+    margin-top: 4.25rem;
+    margin-left: 2.5%;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid V.$DarkCyan;
+    border-radius: 50%;
+}
+
+.line {
+    width: 47.5%;
+    border-bottom: 2px solid V.$PaleOrange;
+}
+
+.optionContainer {
+    width: 100%;
+    height: 400px;
+    margin-top: 4.25rem;
+    margin-bottom: 4.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.optionBox {
+    width: 28%;
+    height: auto;
+    h1 {
+        margin-top: 0;
+        color: V.$PaleOrange;
+        font-size: 4.5rem;
+        font-family: V.$fraunce;
+    }
+    h3 {
+        color: V.$lightCream;
+        font-family: V.$fraunce;
+        font-size: 2.2rem;
+        width: 70%;
+    }
+    p {
+        color: V.$lightCream;
+        font-family: V.$barlow;
+        line-height: 1.75;
+    }
+}
+
+.a {
+    color: V.$lightCream;
+    background-color: V.$DarkCyan;
+    padding: 1rem 1.75rem;
+    font-size: 1.20rem;
+    border-radius: 5px;
+    font-family: V.$fraunce;
+    font-weight: 700;
+    margin-left: 2.5%;
+}
+.a:hover {
+    filter: brightness(150%);
+}
