@@ -1,0 +1,48 @@
+@use '../variables' as V;
+
+.container {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    color: red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.selectionBox {
+    width: 255px;
+    font-family: V.$fraunce;
+}
+
+.numberSpan {
+    color: rgba(131,136,143, .5);
+    padding-right: 1.5rem;
+}
+
+.selectionName {
+    color: V.$grey;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.65rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(131,136,143, .5);
+}
+
+.selectionName:last-child {
+    border-bottom: none;
+}
+
+.rightSelectionContainer {
+    border: 1px solid red;
+    width: 60%;
+}
+
+.selectionDropDownBox {
+    border: 1px solid red;
+    height: 400px;
+}
+
+.selectionTitleContainer {
+    border: 1px solid green;
+}
