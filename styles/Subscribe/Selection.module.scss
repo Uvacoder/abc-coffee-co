@@ -3,10 +3,9 @@
 .container {
     width: 100%;
     height: auto;
-    border: 1px solid red;
-    color: red;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 5rem;
 }
 
 .selectionBox {
@@ -38,18 +37,15 @@
 }
 
 .rightSelectionContainer {
-    border: 1px solid red;
     width: 60%;
 }
 
 .selectionDropDownBox {
-    border: 1px solid red;
-    height: 400px;
-    margin-bottom: 3rem;
+    height: auto;
+    margin-bottom: 0rem;
 }
 
 .selectionTitleContainer {
-    border: 1px solid green;
     font-family: V.$fraunce;
     color: V.$grey;
     font-size: 1.75rem;
@@ -62,10 +58,6 @@
     cursor: pointer;
 }
 
-.upArrow {
-    display: none;
-}
-
 .upArrow:hover {
     cursor: pointer;
 }
@@ -73,7 +65,7 @@
 .choiceBoxContainer {
     height: 280px;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
