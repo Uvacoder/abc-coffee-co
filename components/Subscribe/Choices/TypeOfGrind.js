@@ -24,13 +24,19 @@ export default function TypeOfGrind() {
         <div className={styles.choiceBoxContainer} style={{display: isUpOrDown["typeOfGrind"] === "hidden" ? "none" : "flex"}}>
             <div className={styles.choiceBox} 
             style={{backgroundColor: typeOfGrind === "Wholebean" ? "#0E8784" : ""}}
-            onClick={() => handleTypeOfGrindSelection("Wholebean")}><h4>Wholebean</h4><p>Best choice if you cherish the full sensory experience</p></div>
+            onClick={() => handleTypeOfGrindSelection("Wholebean")}>
+            <h4 style={{color: typeOfGrind === "Wholebean" ? "#F4F1EB" : ""}}>Wholebean</h4>
+            <p style={{color: typeOfGrind === "Wholebean" ? "#F4F1EB" : ""}}>Best choice if you cherish the full sensory experience</p></div>
             <div className={styles.choiceBox} 
             style={{backgroundColor: typeOfGrind === "Filter" ? "#0E8784" : ""}}
-            onClick={() => handleTypeOfGrindSelection("Filter")}><h4>Filter</h4><p>For drip or pour-over coffee methods such as V60 or Aeropress</p></div>
+            onClick={() => handleTypeOfGrindSelection("Filter")}>
+            <h4 style={{color: typeOfGrind === "Filter" ? "#F4F1EB" : ""}}>Filter</h4>
+            <p style={{color: typeOfGrind === "Filter" ? "#F4F1EB" : ""}}>For drip or pour-over coffee methods such as V60 or Aeropress</p></div>
             <div className={styles.choiceBox} 
             style={{backgroundColor: typeOfGrind === "Cafetiére" ? "#0E8784" : ""}}
-            onClick={() => handleTypeOfGrindSelection("Cafetiére")}><h4>Cafetiére</h4><p>Course ground beans specially suited for french press coffee</p></div>
+            onClick={() => handleTypeOfGrindSelection("Cafetiére")}>
+            <h4 style={{color: typeOfGrind === "Cafetiére" ? "#F4F1EB" : ""}}>Cafetiére</h4>
+            <p style={{color: typeOfGrind === "Cafetiére" ? "#F4F1EB" : ""}}>Course ground beans specially suited for french press coffee</p></div>
         </div>
       </div>
     )

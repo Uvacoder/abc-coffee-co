@@ -4,7 +4,7 @@ import { useContext } from 'react'
 
 export default function DeliveryFrequency() {
 
-    const {howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency,handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown} = useContext(Context)
+    const {deliveryFrequency, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown} = useContext(Context)
 
     return (
         <div className={styles.selectionDropDownBox}>
@@ -24,16 +24,19 @@ export default function DeliveryFrequency() {
                 <div className={styles.choiceBoxContainer} style={{display: isUpOrDown["deliveryFrequency"] === "hidden" ? "none" : "flex"}}>
                       <div className={styles.choiceBox} 
                         onClick={() => handleDeliveryFrequencySelection("Every week")} 
-                        style={{backgroundColor: deliveryFrequency === "Every week" ? "#0E8784" : ""}}
-                        ><h4>Every week</h4><p>$7.20 per shipment. Includes free first-class shipping.</p></div>
+                        style={{backgroundColor: deliveryFrequency === "Every week" ? "#0E8784" : ""}}>
+                        <h4 style={{color: deliveryFrequency === "Every week" ? "#F4F1EB" : ""}}>Every week</h4>
+                        <p style={{color: deliveryFrequency === "Every week" ? "#F4F1EB" : ""}}>$7.20 per shipment. Includes free first-class shipping.</p></div>
                       <div className={styles.choiceBox} 
                         onClick={() => handleDeliveryFrequencySelection("Every 2 weeks")}
-                        style={{backgroundColor: deliveryFrequency === "Every 2 weeks" ? "#0E8784" : ""}} 
-                        ><h4>Every 2 weeks</h4><p>$9.60 per shipment. Includes free priority shipping.</p></div>
+                        style={{backgroundColor: deliveryFrequency === "Every 2 weeks" ? "#0E8784" : ""}} >
+                        <h4 style={{color: deliveryFrequency === "Every 2 weeks" ? "#F4F1EB" : ""}}>Every 2 weeks</h4>
+                        <p style={{color: deliveryFrequency === "Every 2 weeks" ? "#F4F1EB" : ""}}>$9.60 per shipment. Includes free priority shipping.</p></div>
                       <div className={styles.choiceBox} 
                         onClick={() => handleDeliveryFrequencySelection("Every month")}
-                        style={{backgroundColor: deliveryFrequency === "Every month" ? "#0E8784" : ""}}
-                        ><h4>Every month</h4><p>$12.00 per shipment. Includes free priority shipping.</p></div>
+                        style={{backgroundColor: deliveryFrequency === "Every month" ? "#0E8784" : ""}}>
+                        <h4 style={{color: deliveryFrequency === "Every month" ? "#F4F1EB" : ""}}>Every month</h4>
+                        <p style={{color: deliveryFrequency === "Every month" ? "#F4F1EB" : ""}}>$12.00 per shipment. Includes free priority shipping.</p></div>
                 </div>
               </div> 
     )

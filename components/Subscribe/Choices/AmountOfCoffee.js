@@ -4,7 +4,7 @@ import { useContext } from 'react'
 
 export default function AmountOfCoffee() {
 
-    const {howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency,handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown} = useContext(Context)
+    const {amountOfCoffee, handleHowMuchCoffeeSelection, handleArrowClick, isUpOrDown} = useContext(Context)
 
     return (
         <div className={styles.selectionDropDownBox}>
@@ -24,16 +24,19 @@ export default function AmountOfCoffee() {
         <div className={styles.choiceBoxContainer} style={{display: isUpOrDown["amountOfCoffee"] === "hidden" ? "none" : "flex"}}>
             <div className={styles.choiceBox} 
               onClick={() => handleHowMuchCoffeeSelection("250g")}
-              style={{backgroundColor: amountOfCoffee === "250g" ? "#0E8784" : ""}}
-              ><h4>250g</h4><p>Perfect for the solo drinker. Yields about 12 delicious cups.</p></div>
+              style={{backgroundColor: amountOfCoffee === "250g" ? "#0E8784" : ""}}>
+              <h4 style={{color: amountOfCoffee === "250g" ? "#F4F1EB" : ""}}>250g</h4>
+              <p style={{color: amountOfCoffee === "250g" ? "#F4F1EB" : ""}}>Perfect for the solo drinker. Yields about 12 delicious cups.</p></div>
             <div className={styles.choiceBox} 
               onClick={() => handleHowMuchCoffeeSelection("500g")}
-              style={{backgroundColor: amountOfCoffee === "500g" ? "#0E8784" : ""}}
-              ><h4>500g</h4><p>Perfect option for a couple. Yields about 40 delectable cups.</p></div>
+              style={{backgroundColor: amountOfCoffee === "500g" ? "#0E8784" : ""}}>
+              <h4 style={{color: amountOfCoffee === "500g" ? "#F4F1EB" : ""}}>500g</h4>
+              <p style={{color: amountOfCoffee === "500g" ? "#F4F1EB" : ""}}>Perfect option for a couple. Yields about 40 delectable cups.</p></div>
             <div className={styles.choiceBox} 
               onClick={() => handleHowMuchCoffeeSelection("1000g")}
-              style={{backgroundColor: amountOfCoffee === "1000g" ? "#0E8784" : ""}}
-              ><h4>1000g</h4><p>Perfect for offices and events. Yields about 90 delightful cups.</p></div>
+              style={{backgroundColor: amountOfCoffee === "1000g" ? "#0E8784" : ""}}>
+              <h4 style={{color: amountOfCoffee === "1000g" ? "#F4F1EB" : ""}}>1000g</h4>
+              <p style={{color: amountOfCoffee === "1000g" ? "#F4F1EB" : ""}}>Perfect for offices and events. Yields about 90 delightful cups.</p></div>
         </div>
       </div>
     )

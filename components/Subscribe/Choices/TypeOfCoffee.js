@@ -4,7 +4,7 @@ import { useContext } from 'react'
 
 export default function TypeOfCoffee() {
 
-    const {howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency,handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown} = useContext(Context)
+    const {typeOfCoffee, handleWhatTypeOfCoffeeSelection, handleArrowClick, isUpOrDown} = useContext(Context)
 
     return (
         <div className={styles.selectionDropDownBox}>
@@ -25,15 +25,18 @@ export default function TypeOfCoffee() {
             <div className={styles.choiceBox} 
               onClick={() => handleWhatTypeOfCoffeeSelection("Single Origin")}
               style={{backgroundColor: typeOfCoffee === "Single Origin" ? "#0E8784" : ""}}>
-              <h4>Single Origin</h4><p>Distinct, high quality coffee from a specific family-owned farm</p></div>
+              <h4 style={{color: typeOfCoffee === "Single Origin" ? "#F4F1EB" : ""}}>Single Origin</h4>
+              <p style={{color: typeOfCoffee === "Single Origin" ? "#F4F1EB" : ""}}>Distinct, high quality coffee from a specific family-owned farm</p></div>
             <div className={styles.choiceBox} 
               onClick={() => handleWhatTypeOfCoffeeSelection("Decaf")}
               style={{backgroundColor: typeOfCoffee === "Decaf" ? "#0E8784" : ""}}>
-              <h4>Decaf</h4><p>Just like regular coffee, except the caffeine has been removed</p></div>
+              <h4 style={{color: typeOfCoffee === "Decaf" ? "#F4F1EB" : ""}}>Decaf</h4>
+              <p style={{color: typeOfCoffee === "Decaf" ? "#F4F1EB" : ""}}>Just like regular coffee, except the caffeine has been removed</p></div>
             <div className={styles.choiceBox} 
               onClick={() => handleWhatTypeOfCoffeeSelection("Blended")}
               style={{backgroundColor: typeOfCoffee === "Blended" ? "#0E8784" : ""}}>
-              <h4>Blended</h4><p>Combination of two or three dark roasted beans of organic coffees</p></div>
+              <h4 style={{color: typeOfCoffee === "Blended" ? "#F4F1EB" : ""}}>Blended</h4>
+              <p style={{color: typeOfCoffee === "Blended" ? "#F4F1EB" : ""}}>Combination of two or three dark roasted beans of organic coffees</p></div>
          </div>
       </div>
     )

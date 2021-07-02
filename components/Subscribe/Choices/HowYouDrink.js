@@ -4,7 +4,7 @@ import { useContext } from 'react'
 
 export default function HowYouDrink() {
 
-    const {howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency,handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown} = useContext(Context)
+    const {howYouDrink,handleHowYouDrinkSelection, handleArrowClick, isUpOrDown} = useContext(Context)
 
     return (
         <div className={styles.selectionDropDownBox}>
@@ -25,18 +25,18 @@ export default function HowYouDrink() {
                     <div className={styles.choiceBox} 
                       onClick={() => handleHowYouDrinkSelection("Capsule")} 
                       style={{backgroundColor: howYouDrink === "Capsule" ? "#0E8784" : ""}}>
-                        <h4>Capsule</h4>
-                        <p>Compatible with Nespresso systems and similar brewers</p></div>
+                        <h4 style={{color: howYouDrink === "Capsule" ? "#F4F1EB" : ""}}>Capsule</h4>
+                        <p style={{color: howYouDrink === "Capsule" ? "#F4F1EB" : ""}}>Compatible with Nespresso systems and similar brewers</p></div>
                     <div className={styles.choiceBox} 
                       onClick={() => handleHowYouDrinkSelection("Filter")} 
                       style={{backgroundColor: howYouDrink === "Filter" ? "#0E8784" : ""}}>
-                        <h4>Filter</h4>
-                        <p>For pour over or drip methods like Aeropress, Chemex, and V60</p></div>
+                        <h4 style={{color: howYouDrink === "Filter" ? "#F4F1EB" : ""}}>Filter</h4>
+                        <p style={{color: howYouDrink === "Filter" ? "#F4F1EB" : ""}}>For pour over or drip methods like Aeropress, Chemex, and V60</p></div>
                     <div className={styles.choiceBox} 
                       onClick={() => handleHowYouDrinkSelection("Espresso")} 
                       style={{backgroundColor: howYouDrink === "Espresso" ? "#0E8784" : ""}}>
-                        <h4>Espresso</h4>
-                        <p>Dense and finely ground beans for an intense, flavorful experience</p></div>
+                        <h4 style={{color: howYouDrink === "Espresso" ? "#F4F1EB" : ""}}>Espresso</h4>
+                        <p style={{color: howYouDrink === "Espresso" ? "#F4F1EB" : ""}}>Dense and finely ground beans for an intense, flavorful experience</p></div>
                 </div>
               </div>
     )
