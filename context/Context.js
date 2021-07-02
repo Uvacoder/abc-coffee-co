@@ -39,7 +39,6 @@ function ContextProvider({ children }) {
     }
 
     function handleArrowClick(toggleHandle) {
-        // console.log(toggleHandle, isUpOrDown[toggleHandle], isUpOrDown)
         if (isUpOrDown[toggleHandle] === "hidden") {
             const newValue = isUpOrDown[toggleHandle] = "visible"
             setIsUpOrDown({...isUpOrDown, newValue})
@@ -50,10 +49,8 @@ function ContextProvider({ children }) {
 
     }
 
-    console.log(isUpOrDown)
-
-
-    console.log(howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency)
+    
+    
 
 
     return (
