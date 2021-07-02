@@ -1,0 +1,66 @@
+@use '../variables' as V;
+
+.container {
+    border: 1px solid red;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderSummary {
+    background-color: V.$DarkGreyBlue;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+    padding: 1.5rem 4.5rem;
+
+    h4 {
+        font-family: V.$barlow;
+        color: #FFFFFF;
+        font-weight: 100;
+        
+        
+    }
+
+    h2 {
+        color: #FFFFFF;
+        font-family: V.$fraunce;
+        line-height: 1.5;
+        font-size: 1.75rem;
+        margin-top: 0;
+        
+    }
+    span {
+        font-family: V.$fraunce;
+        color: V.$DarkCyan;
+    }
+}
+
+.buttonContainer {
+    border: 1px solid red;
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: flex-end;
+
+
+    .button {
+        color: V.$lightCream;
+        background-color: V.$DarkCyan;
+        width: 215px;
+        padding: 1rem 1.75rem;
+        font-size: 1.20rem;
+        border-radius: 5px;
+        font-family: V.$fraunce;
+        font-weight: 700;  
+    }
+    .button:hover {
+        filter: brightness(150%);
+        cursor: pointer;
+    }
+}
+
+
+

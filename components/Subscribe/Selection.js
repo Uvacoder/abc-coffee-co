@@ -5,6 +5,7 @@ import AmountOfCoffee from './Choices/AmountOfCoffee'
 import TypeOfGrind from './Choices/TypeOfGrind'
 import DeliveryFrequency from './Choices/DeliveryFrequency'
 import SelectionBox from './Choices/SelectionBox'
+import CreatePlan from './Choices/CreatePlan'
 
 export default function Selection() {
 
@@ -17,6 +18,7 @@ export default function Selection() {
               <AmountOfCoffee />
               <TypeOfGrind />
               <DeliveryFrequency />
+              <CreatePlan />
            </div>
         </div> 
     )
