@@ -9,11 +9,11 @@ export default function Selection() {
     return (
         <div className={styles.container}>
            <div className={styles.selectionBox}>
-                <div className={styles.selectionName}><span className={styles.numberSpan}>01</span>Preferences</div>
-                <div className={styles.selectionName}><span className={styles.numberSpan}>02</span>Bean Type</div>
-                <div className={styles.selectionName}><span className={styles.numberSpan}>03</span>Quantity</div>
-                <div className={styles.selectionName}><span className={styles.numberSpan}>04</span>Grind Option</div>
-                <div className={styles.selectionName}><span className={styles.numberSpan}>05</span>Deliveries</div>
+                <div className={styles.selectionName} onClick={() => handleArrowClick("howYouDrink")}><span className={styles.numberSpan}>01</span>Preferences</div>
+                <div className={styles.selectionName} onClick={() => handleArrowClick("typeOfCoffee")}><span className={styles.numberSpan}>02</span>Bean Type</div>
+                <div className={styles.selectionName} onClick={() => handleArrowClick("amountOfCoffee")} ><span className={styles.numberSpan}>03</span>Quantity</div>
+                <div className={styles.selectionName} onClick={() => handleArrowClick("typeOfGrind")}><span className={styles.numberSpan}>04</span>Grind Option</div>
+                <div className={styles.selectionName} onClick={() => handleArrowClick("deliveryFrequency")} ><span className={styles.numberSpan}>05</span>Deliveries</div>
            </div>
            <div className={styles.rightSelectionContainer}>
               <div className={styles.selectionDropDownBox}>
