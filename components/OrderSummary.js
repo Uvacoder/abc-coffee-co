@@ -5,12 +5,12 @@ import { useContext } from 'react'
 
 export default function OrderSummary() {
 
-    const {amountOfCoffee, howYouDrink, typeOfCoffee, typeOfGrind, deliveryFrequency} = useContext(Context)
+    const {amountOfCoffee, howYouDrink, typeOfCoffee, typeOfGrind, deliveryFrequency, showOrderSummary} = useContext(Context)
 
     
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{display: showOrderSummary === true ? '' : "none"}}>
             <div className={styles.orderSummary}>
                 <h4>ORDER SUMMARY</h4>
                 <h2>&ldquo; I drink my coffee using <span>{howYouDrink}</span>, with a <span>{typeOfCoffee}</span> type of bean. <span>{amountOfCoffee}</span> ground ala <span>{typeOfGrind}</span> sent to me <span>{deliveryFrequency}</span>.&rdquo;</h2>

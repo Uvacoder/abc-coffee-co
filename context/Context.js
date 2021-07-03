@@ -18,6 +18,8 @@ function ContextProvider({ children }) {
         "deliveryFrequency": "hidden",
     })
 
+    const [showOrderSummary, setShowOrderSummary] = useState(false)
+
     function handleHowYouDrinkSelection(choice) {
         setHowYouDrink(choice)
     }
@@ -46,7 +48,16 @@ function ContextProvider({ children }) {
             const newValue = isUpOrDown[toggleHandle] = "hidden"
             setIsUpOrDown({...isUpOrDown, newValue})
         }
+    }
 
+    function handleCreatePlanClick() {
+        setShowOrderSummary(true)
+        console.log("true")
+    }
+
+    const buttonConstraints = {
+        backgroundColor: howYouDrink === "_____" || typeOfCoffee === "_____" || amountOfCoffee === "_____" || typeOfGrind === "_____" || deliveryFrequency === "_____" ? "#E2DEDB" : "",
+        pointerEvents: howYouDrink === "_____" || typeOfCoffee === "_____" || amountOfCoffee === "_____" || typeOfGrind === "_____" || deliveryFrequency === "_____" ? "none" : "",
     }
 
     
@@ -56,7 +67,7 @@ function ContextProvider({ children }) {
 
 
     return (
-        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown}} >
+        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick}} >
             {children}
         </Context.Provider>
     )
