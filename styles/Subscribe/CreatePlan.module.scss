@@ -1,7 +1,6 @@
 @use '../variables' as V;
 
 .container {
-    border: 1px solid red;
     width: 100%;
     height: 400px;
     display: flex;
@@ -36,7 +35,6 @@
 }
 
 .buttonContainer {
-    border: 1px solid red;
     width: 100%;
     margin: 2rem auto;
     display: flex;

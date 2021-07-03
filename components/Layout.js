@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
+import OrderSummary from './OrderSummary'
 
 export default function Layout({children}) {
     return (
@@ -15,6 +16,7 @@ export default function Layout({children}) {
           <main>
             {children}
           </main>
+        <OrderSummary />
         <Footer />
       </div>
     )

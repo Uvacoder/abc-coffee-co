@@ -1,6 +1,7 @@
+@use 'variables' as V;
 
 .container {
-  border: 1px solid red;
+  background-color: V.$lightCream;
   height: auto;
   width: 100%;
   padding-bottom: 88px;
