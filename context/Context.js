@@ -60,6 +60,9 @@ function ContextProvider({ children }) {
         pointerEvents: howYouDrink === "_____" || typeOfCoffee === "_____" || amountOfCoffee === "_____" || typeOfGrind === "_____" || deliveryFrequency === "_____" ? "none" : "",
     }
 
+    const dimmerStyle = {filter: showOrderSummary === true ? "brightness(.50)" : ""}
+    const dimmerStyleLayout = {minWidth: '100%', padding: "0", overflow: "hidden", filter: showOrderSummary === true ? "brightness(.50)" : ""}
+
     
 
     
@@ -67,7 +70,7 @@ function ContextProvider({ children }) {
 
 
     return (
-        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick}} >
+        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout}} >
             {children}
         </Context.Provider>
     )

@@ -5,8 +5,9 @@ import WhyChoose from '../components/Home/WhyChoose'
 import HowItWorks from '../components/Home/HowItWorks'
 
 export default function Home() {
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <Hero />
       <Collection />
       <WhyChoose />

@@ -7,8 +7,6 @@ export default function OrderSummary() {
 
     const {amountOfCoffee, howYouDrink, typeOfCoffee, typeOfGrind, deliveryFrequency, showOrderSummary} = useContext(Context)
 
-    
-
     return (
         <div className={styles.container} style={{display: showOrderSummary === true ? '' : "none"}}>
             <div className={styles.orderSummary}>

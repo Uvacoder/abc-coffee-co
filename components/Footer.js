@@ -1,11 +1,16 @@
 import styles from '../styles/Footer.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Context } from '../context/Context'
+import { useContext } from 'react'
 
 export default function Footer() {
 
+    const {dimmerStyle} = useContext(Context)
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={dimmerStyle}>
+          <div className={styles.greyContainer} >
             <div className={styles.leftFlexContainer}>
                 <Image src="/../public/assets/shared/desktop/logo-footer.svg" alt="coffee roasters logo" width="236" height="26" />
                 <nav className={styles.nav}>
@@ -25,6 +30,8 @@ export default function Footer() {
                 <Image src="/../public/assets/shared/desktop/icon-twitter.svg" alt="coffee roasters logo" width="24" height="24"  className={styles.svg}/>
                 <Image src="/../public/assets/shared/desktop/icon-instagram.svg" alt="coffee roasters logo" width="24" height="24"  className={styles.svg}/>
             </div>
+        </div>  
         </div>
+        
     )
 }
