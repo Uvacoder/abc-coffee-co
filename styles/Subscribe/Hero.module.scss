@@ -8,15 +8,17 @@
 }
 
 .img {
+    width: 100%;
     height: auto;
 }
 
 .textContainer {
     width: 550px;
     height: auto;
-    position: absolute;
-    top: 15%;
-    left: 10%;
+    position: relative;
+    z-index: 2;
+    margin-top: -30%;
+    margin-left: 85px;
     h2 {
         color: V.$lightCream;
         font-family: V.$fraunce;

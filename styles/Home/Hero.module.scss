@@ -7,6 +7,7 @@
 }
 
 .img {
+    width: 100%; 
     height: auto;
     border-radius: 15px;
 }
@@ -14,9 +15,10 @@
 .textContainer {
     width: 550px;
     height: auto;
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    position: relative;
+    z-index: 2;
+    margin-top: -40%;
+    margin-left: 85px;
     h1 {
         color: V.$lightCream;
         font-family: V.$fraunce;
