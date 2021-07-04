@@ -4,9 +4,73 @@
     width: 540px;
     height: 600px;
     background-color: V.$lightCream;
-    background-color: red;
     position: absolute;
     margin-top: -50%;
     right: 10%;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.orderSummary {
+    background-color: V.$DarkGreyBlue;
+    height: 136px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    h2 {
+        color: #FFFFFF;
+        font-family: V.$fraunce;
+        font-size: 2.65rem;
+        margin-left: 3.5rem;
+        span {
+        font-family: V.$fraunce;
+        color: V.$DarkCyan;
+    }
+    }
+    
+}
+
+.orderStateSummary {
+    margin: 4rem auto 0 auto;
+    width: 82.5%;
+    h2 {
+        color: V.$grey;
+        font-family: V.$fraunce;
+        line-height: 1.5;
+        span {
+        font-family: V.$fraunce;
+        color: V.$DarkCyan;
+    }
+    }
+    p {
+      color: V.$grey;
+      line-height: 1.5;
+    }
+}
+
+.buttonContainer {
+    width: 82.5%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    h2 {
+        font-size: 2rem;
+        color: V.$DarkGreyBlue;
+        font-family: V.$fraunce;
+    }
+    .button {
+        color: V.$lightCream;
+        background-color: V.$DarkCyan;
+        width: 200px;
+        padding: 1rem 4rem;
+        font-size: 1.20rem;
+        border-radius: 5px;
+        font-family: V.$fraunce;
+        font-weight: 700;  
+    }
+    .button:hover {
+        filter: brightness(150%);
+        cursor: pointer;
+    }
 }
