@@ -16,22 +16,15 @@ export default function OrderSummary() {
             </div>
             <div className={styles.orderStateSummary}>
                 <h2>&ldquo; I drink my coffee using <span>{howYouDrink}</span>, with a <span>{typeOfCoffee}</span> type of bean. <span>{amountOfCoffee}</span> ground ala <span>{typeOfGrind}</span> sent to me <span>{deliveryFrequency}</span>.&rdquo;</h2>
-
                 <p>
             Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
             </p> 
             </div>
-
-
-
-           
             <div className={styles.buttonContainer} >
                 <h2>{price}</h2>
                 <div>
                   <a className={styles.button} >Checkout</a>  
-                </div>
-
-                
+                </div> 
             </div>
       </div>
     )

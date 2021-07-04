@@ -7,10 +7,10 @@ import { useContext } from 'react'
 
 export default function Subscribe(){
 
-    const {dimmerStyle} = useContext(Context)
+    const {dimmerStyle, handleTurnDimmerOffClick, showOrderSummary} = useContext(Context)
 
     return (
-        <div className={styles.container} style={dimmerStyle}>
+        <div className={styles.container} style={dimmerStyle} onClick={showOrderSummary ? handleTurnDimmerOffClick : null}>
             <Hero />
             <HowItWorks />
             <Selection />

@@ -52,7 +52,6 @@ function ContextProvider({ children }) {
 
     function handleCreatePlanClick() {
         setShowOrderSummary(true)
-        console.log("true")
     }
 
     const buttonConstraints = {
@@ -63,14 +62,22 @@ function ContextProvider({ children }) {
     const dimmerStyle = {filter: showOrderSummary === true ? "brightness(.50)" : ""}
     const dimmerStyleLayout = {minWidth: '100%', padding: "0", overflow: "hidden", filter: showOrderSummary === true ? "brightness(.50)" : ""}
 
+    function handleTurnDimmerOffClick() {
+        setShowOrderSummary(false)
+    }
+
     
 
     
+
+    useEffect(() => {
+        console.log(showOrderSummary)
+    }, [showOrderSummary])
     
 
 
     return (
-        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout}} >
+        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout, handleTurnDimmerOffClick}} >
             {children}
         </Context.Provider>
     )
