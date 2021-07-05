@@ -7,9 +7,29 @@
 }
 
 .img {
+   img {
     width: 100%; 
     height: auto;
     border-radius: 15px;
+   }
+}
+
+.imgTablet {
+    display: none;
+    img {
+        width: 100%; 
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+.imgMobile {
+    display: none;
+    img {
+        width: 100%; 
+        height: auto;
+        border-radius: 15px;
+    }
 }
 
 .textContainer {
@@ -26,8 +46,7 @@
         line-height: 1;
     }
     p {
-
-        color: V.$grey;
+        color: V.$lightCream;
         width: 420px;
         line-height: 1.5;
         margin-top: -2rem;
@@ -45,4 +64,107 @@
     a:hover {
         filter: brightness(150%);
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .textContainer {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .textContainer {
+        margin-left: 3rem;
+        margin-top: -42.5%;
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        display: none;
+    }
+
+    .imgTablet {
+        display: block;
+    }
+
+    .textContainer {
+        margin-top: -65%;
+        margin-left: 65px;
+        width: 60%;
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            width: 90%;
+            font-weight: 200;
+        }
+    }
+}    
+
+@media screen and (max-width: 650px) {
+
+    .textContainer {
+        width: 90%;
+        margin:-70% auto 0 auto;
+        text-align: center;
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            width: 100%;
+            font-weight: 200;
+        }
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .imgContainer {
+        .imgMobile {
+             display: block;
+        }
+        img {
+                width: 500px;
+                height: auto;
+        } 
+    }
+    .imgTablet {
+        display: none;
+    }
+
+    .textContainer {
+        margin: -125% auto 0 auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .textContainer {
+        margin: -135% auto 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .textContainer {
+        margin: -145% auto 0 auto;
+        width: 90%;
+        h1 {
+            font-size: 2rem;
+    }
+        p {
+            font-size: 1rem;
+    }
+    } 
 }
