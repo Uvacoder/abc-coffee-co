@@ -24,6 +24,21 @@ export default function Header() {
                     <a className={styles.a} >CREATE YOUR PLAN</a>
                 </Link> 
                 </nav>
+            <div className={styles.rightFlexContainer}>
+                <Image src="/../public/assets/shared/mobile/icon-hamburger.svg" alt="menu open" width="14" height="14"/>
+                <Image src="/../public/assets/shared/mobile/icon-close.svg" alt="menu close" width="14" height="14"/>
+            </div> 
+            <nav className={styles.mobileNav}>
+                <Link href="/">
+                    <a className={styles.a} >Home</a>
+                </Link>
+                <Link href="/about">
+                    <a className={styles.a} >About Us</a>
+                </Link>     
+                <Link href="/subscribe">
+                    <a className={styles.a} >Create Your Plan</a>
+                </Link> 
+                </nav>
         </div>
     )
 }

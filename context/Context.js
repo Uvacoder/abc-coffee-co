@@ -70,9 +70,6 @@ function ContextProvider({ children }) {
 
     
 
-    useEffect(() => {
-        console.log(showOrderSummary)
-    }, [showOrderSummary])
     
 
 
