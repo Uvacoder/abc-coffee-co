@@ -20,6 +20,8 @@ function ContextProvider({ children }) {
 
     const [showOrderSummary, setShowOrderSummary] = useState(false)
 
+    const [isNavOpen, setIsNavOpen] = useState(false)
+
     function handleHowYouDrinkSelection(choice) {
         setHowYouDrink(choice)
     }
@@ -66,7 +68,11 @@ function ContextProvider({ children }) {
         setShowOrderSummary(false)
     }
 
-    
+    function handleHamburgerClick() {
+        setIsNavOpen(prevState => !prevState)
+        
+    }
+
 
     
 
@@ -74,7 +80,7 @@ function ContextProvider({ children }) {
 
 
     return (
-        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout, handleTurnDimmerOffClick}} >
+        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout, handleTurnDimmerOffClick, isNavOpen, handleHamburgerClick}} >
             {children}
         </Context.Provider>
     )
