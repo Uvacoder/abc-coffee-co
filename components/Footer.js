@@ -12,7 +12,10 @@ export default function Footer() {
         <div className={styles.container} style={dimmerStyle}>
           <div className={styles.greyContainer} >
             <div className={styles.leftFlexContainer}>
-                <Image src="/../public/assets/shared/desktop/logo-footer.svg" alt="coffee roasters logo" width="236" height="26" />
+                <div>
+                   <Image src="/../public/assets/shared/desktop/logo-footer.svg" alt="coffee roasters logo" width="236" height="26" /> 
+                </div>
+                
                 <nav className={styles.nav}>
                     <Link href="/">
                         <a className={styles.a}>HOME</a>

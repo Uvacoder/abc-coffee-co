@@ -62,3 +62,74 @@
     filter: brightness(0) saturate(100%) invert(87%) sepia(3%) saturate(3371%) hue-rotate(334deg) brightness(101%) contrast(99%);
     
 }
+
+@media screen and (max-width: 950px) {
+    .nav {
+        justify-content: space-evenly;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .greyContainer {
+        height: 270px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 72px;
+    }
+
+    .leftFlexContainer {
+        padding-top: 2rem;
+        height: 75px;
+        width: 275px;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 236px;
+        }
+        img {
+            width: 236px;
+            height: auto;
+        }
+    }
+
+    .nav {
+            width: 100%;
+            margin: 2rem auto;
+    }
+
+    .a {
+        margin-left: 0;
+    }
+
+        .rightFlexContainer {
+            justify-content: space-evenly;
+            padding-right: 0;
+    }  
+}
+
+@media screen and (max-width: 375px) {
+    .greyContainer {
+        height: 376px;
+    }
+    .nav {
+        flex-direction: column;
+        a {
+            padding: .5rem 0;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .leftFlexContainer {
+        div {
+            width: 90%;
+        }
+    }
+}
+
