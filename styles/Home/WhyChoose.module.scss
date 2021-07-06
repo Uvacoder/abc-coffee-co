@@ -160,15 +160,16 @@
 }
 
 @media screen and (max-width: 500px) {
-    .container {
-        padding: 0 0 30rem 0;
-    }
 
     .grayBacking {
-        height: 1250px;
+        height: 1000px;
     }
 }
 
 @media screen and (max-width: 375px) {
-
+    .grayTextContainer {
+        h2 {
+            font-size: 1.9rem;
+        }
+    }
 }
