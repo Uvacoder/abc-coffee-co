@@ -39,7 +39,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
 }
 
 .featureBox {
@@ -48,7 +47,7 @@
     align-items: center;
     justify-content: space-around;
     width: 30%;
-    height: 382px;
+    height: auto;
     background-color: V.$DarkCyan;
     border-radius: 10px;
     .imgContainer {
@@ -77,4 +76,99 @@
         margin-top: 0;
     } 
     }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: max-content;
+        padding: 0 0 25rem 0;
+        
+    }
+
+    .grayTextContainer {
+        width: 80%;
+    }
+
+    .aboveFlexContainer {
+        height: auto;
+        flex-direction: column;
+        .featureBox {
+            width: 90%;
+            height: 180px;
+            flex-direction: row;
+            margin: 1rem auto;
+            .imgContainer {
+            margin: 0 auto;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 55px;
+                height: auto;
+             }
+            }
+            .textContainer {
+                width: 70%;
+                padding: 0 2rem;
+                h3 {
+                    width: 100%;
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+                p {
+                    text-align: left;
+                    width: 100%;
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 0 40rem 0;
+    }
+    .grayBacking {
+        height: 900px;
+    }
+    .aboveFlexContainer {
+        .featureBox {
+            height: 400px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .imgContainer {
+                width: auto;
+                img {
+                width: 72px;
+                height: auto;
+            }
+            }
+            .textContainer {
+                width: 80%;
+                h3 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                p {
+                    text-align: center;
+                    width: 100%;
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 0 0 30rem 0;
+    }
+
+    .grayBacking {
+        height: 1250px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
 }
