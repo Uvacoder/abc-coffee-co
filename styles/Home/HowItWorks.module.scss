@@ -80,3 +80,73 @@
 .a:hover {
     filter: brightness(150%);
 }
+
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+    }
+
+    .optionContainer {
+        padding-bottom: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .optionContainer {
+        padding-bottom: 500px;
+        .optionBox {
+            width: 30%;
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .container {
+        padding-top: 5rem;
+        padding-bottom: 150px;
+        text-align: center;
+    }
+    .lineBox {
+        display: none;
+    }
+
+    .optionContainer {
+        flex-direction: column;
+        margin: 35rem auto 5rem auto;
+        .optionBox {
+            width: 100%;
+            height: auto;
+            margin: 2rem auto;
+            h3 {
+                width: 100%;
+            }
+            p {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding-top: 0;
+    }
+    .optionContainer {
+        padding-bottom: 600px;
+    }
+    .lead {
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        padding-top: 2rem;
+    }
+}
+
