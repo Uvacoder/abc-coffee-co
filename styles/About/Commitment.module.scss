@@ -10,7 +10,9 @@
 }
 
 .imgContainer {
-    width: auto;
+    width: 445px;
+    height: auto;
+    height: auto;
     display: flex;
     margin-left: 5%;
     img {
@@ -18,8 +20,23 @@
     }
 }
 
+.imgContainerTablet {
+    display: none;
+    img {
+        border-radius: 10px;
+    }
+}
+
+.imgContainerMobile {
+    display: none;
+    img {
+        border-radius: 10px;
+    }
+}
+
 .textContainer {
     width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,5 +51,75 @@
         line-height: 1.75;
         margin-top: 0;
         width: 83%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .textContainer {
+        width: 40%;
+        p {
+            width: 100%;
+        }
+    }
+
+    .imgContainer {
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imgContainer {
+        display: none;
+    }
+
+    .imgContainerTablet {
+        display: block;
+    }
+
+    .container {
+        margin: 10rem auto 10.25rem auto;
+        justify-content: space-between;
+    }
+    .textContainer {
+        width: 50%;
+        h2 {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textContainer {
+        width: 75%;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 7.5rem auto 10.25rem auto;
+    }
+    .imgContainerTablet {
+        display: none;
+    }
+
+    .imgContainerMobile {
+        display: block;
+    }
+
+    .textContainer {
+        width: 100%;
     }
 }
