@@ -39,3 +39,35 @@
         font-weight: 300;
     }
 }
+
+@media screen and (max-width: 675px) {
+    .container {
+        height: auto;
+        padding-bottom: 4rem;
+    }
+
+    .headline {
+        text-align: center;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+        height: auto;
+    }
+    .countryBox {
+        width: 100%;
+        margin: 2rem auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .countryBox {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+}
