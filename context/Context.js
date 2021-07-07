@@ -73,6 +73,10 @@ function ContextProvider({ children }) {
         
     }
 
+    function dropDownNavClick() {
+        setIsNavOpen(false)
+    }
+
 
     
 
@@ -80,7 +84,7 @@ function ContextProvider({ children }) {
 
 
     return (
-        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout, handleTurnDimmerOffClick, isNavOpen, handleHamburgerClick}} >
+        <Context.Provider value={{howYouDrink, typeOfCoffee, amountOfCoffee, typeOfGrind, deliveryFrequency, handleHowYouDrinkSelection, handleWhatTypeOfCoffeeSelection, handleHowMuchCoffeeSelection, handleTypeOfGrindSelection, handleDeliveryFrequencySelection, handleArrowClick, isUpOrDown, showOrderSummary, setShowOrderSummary, buttonConstraints, handleCreatePlanClick, dimmerStyle, dimmerStyleLayout, handleTurnDimmerOffClick, isNavOpen, handleHamburgerClick, dropDownNavClick}} >
             {children}
         </Context.Provider>
     )

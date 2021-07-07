@@ -6,7 +6,7 @@ import { useContext } from 'react'
 
 export default function Header() {
 
-    const {dimmerStyle, isNavOpen, handleHamburgerClick} = useContext(Context)
+    const {dimmerStyle, isNavOpen, handleHamburgerClick, dropDownNavClick} = useContext(Context)
 
     return (
         <div className={styles.container} style={dimmerStyle}>
@@ -34,13 +34,13 @@ export default function Header() {
             </div> 
             <nav className={styles.mobileNav} style={{display: isNavOpen ? '' : "none"}}>
                 <Link href="/">
-                    <a className={styles.a} >Home</a>
+                    <a className={styles.a} onClick={dropDownNavClick}>Home</a>
                 </Link>
                 <Link href="/about">
-                    <a className={styles.a} >About Us</a>
+                    <a className={styles.a} onClick={dropDownNavClick}>About Us</a>
                 </Link>     
                 <Link href="/subscribe">
-                    <a className={styles.a} >Create Your Plan</a>
+                    <a className={styles.a} onClick={dropDownNavClick}>Create Your Plan</a>
                 </Link> 
                 </nav>
         </div>
