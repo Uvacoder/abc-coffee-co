@@ -7,10 +7,25 @@
 }
 
 .img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
+    img {
+        border-radius: 15px;
+    }
 }
+
+.imgTablet {
+    display: none;
+    img {
+        border-radius: 15px;
+    }
+}
+
+.imgMobile {
+    display: none;
+    img {
+        border-radius: 10px;
+    }
+}
+
 
 .textContainer {
     width: 550px;
@@ -31,5 +46,77 @@
         line-height: 1.5;
         margin-top: 2rem;
         margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .textContainer {
+        margin-top: -32.5%;
+        margin-left: 60px;
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        display: none;
+    }
+
+    .imgTablet {
+        display: block;
+    }
+
+    .textContainer {
+        position: absolute;
+        margin-top: -45%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .textContainer {
+        text-align: center;
+        margin-top: -47.5%;
+        margin-left: 6%;
+        width: 80%;
+        h2 {
+            font-size: 1.75rem;
+        }
+        p {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imgTablet {
+        display: none;
+    }
+
+    .imgMobile {
+        display: block;
+    }
+
+    .textContainer {
+        position: absolute;
+        top: 350px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .textContainer {
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .textContainer {
+        top: 220px;
     }
 }
