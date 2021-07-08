@@ -5,6 +5,7 @@
     height: 600px;
     background-color: V.$lightCream;
     position: fixed;
+    z-index: 5;
     top: 1.5%;
     right: 1.5%;
     border-radius: 10px;
@@ -72,5 +73,106 @@
     .button:hover {
         filter: brightness(150%);
         cursor: pointer;
+    }
+}
+
+.buttonContainerMobile {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 90%;
+        height: auto;
+        right: 5%;
+        top: 5%;
+    }
+
+    .buttonContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .orderSummary {
+        height: auto;
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+    .buttonContainer {
+        display: none;
+    }
+
+    .buttonContainerMobile {
+        display: flex;
+        padding-bottom: 2rem;
+        .button {
+            color: V.$lightCream;
+            background-color: V.$DarkCyan;
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.20rem;
+            border-radius: 5px;
+            font-family: V.$fraunce;
+            font-weight: 700;  
+        }
+        .button:hover {
+            filter: brightness(150%);
+            cursor: pointer;
+        }
+        
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        top: 1%;
+        max-height: 99vh;
+    }
+
+    .orderStateSummary {
+        margin: 1rem auto;
+        width: 90%;
+        h2 {
+            line-height: 1.5;
+        }
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .orderSummary {
+        height: auto;
+        h2 {
+            font-size: 1.5rem;
+            width: auto;
+            margin-left: 0;
+            margin: 0 auto;
+            padding: 1rem 0;
+        }
+    }
+    .orderStateSummary {
+        margin: 1rem auto;
+        width: 90%;
+        h2 {
+            line-height: 1.25;
+        }
+        p {
+            line-height: 1.25;
+        }
+    }
+
+    .buttonContainerMobile {
+        .button {
+            font-size: 1rem;
+            width: 90%;
+        }
     }
 }

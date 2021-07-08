@@ -26,6 +26,9 @@ export default function OrderSummary() {
                   <a className={styles.button} >Checkout</a>  
                 </div> 
             </div>
+            <div className={styles.buttonContainerMobile} >
+                  <a className={styles.button} >Checkout - {price}</a>  
+            </div>
       </div>
     )
 }
