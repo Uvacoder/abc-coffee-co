@@ -12,7 +12,7 @@ export default function Hero() {
                 <Image  src="/assets/plan/tablet/image-hero-blackcup.jpg" alt="coffee grinder" width="680" height="400"  className={styles.img} />
             </div>
             <div className={styles.imgContainerMobile}>
-                <Image  src="/assets/plan/mobile/image-hero-blackcup.jpg" alt="coffee grinder" width="400" height="500"  className={styles.img} />
+                <Image  src="/assets/plan/mobile/image-hero-blackcup.jpg" alt="coffee grinder" width="500" height="500"  className={styles.img} />
             </div>
             <div className={styles.textContainer}>
                 <h2>Create plan</h2>

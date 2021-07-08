@@ -152,3 +152,27 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 15rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        margin: 7.5rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin: 5rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        margin: 2.5rem auto 0 auto;
+    }
+}

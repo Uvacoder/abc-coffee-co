@@ -117,12 +117,14 @@
 }
 
 @media screen and (max-width: 500px) {
+
     .imgContainerTablet {
         display: none;
     }
 
     .imgContainerMobile {
         display: block;
+        border: 1px solid red;
     }
     .textContainer {
         width: 90%;
