@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <div className={styles.container} style={dimmerStyle}>
             <div className={styles.leftFlexContainer}>
-                <Image src="/../public/assets/shared/desktop/logo.svg" alt="coffee roasters logo" width="236" height="26"/>
+                <Image src="/assets/shared/desktop/logo.svg" alt="coffee roasters logo" width="236" height="26"/>
             </div>
                 <nav className={styles.nav}>
                 <Link href="/">
@@ -26,10 +26,10 @@ export default function Header() {
                 </nav>
             <div className={styles.rightFlexContainer}>
                 <div style={{display: isNavOpen ? "none" : 'block'}}>
-                    <Image src="/../public/assets/shared/mobile/icon-hamburger.svg" alt="menu open" width="14" height="14"  onClick={handleHamburgerClick}/>
+                    <Image src="/assets/shared/mobile/icon-hamburger.svg" alt="menu open" width="14" height="14"  onClick={handleHamburgerClick}/>
                 </div>
                 <div style={{display: isNavOpen ? "block" : "none"}}>
-                    <Image src="/../public/assets/shared/mobile/icon-close.svg" alt="menu close" width="14" height="14"  onClick={handleHamburgerClick}/>
+                    <Image src="/assets/shared/mobile/icon-close.svg" alt="menu close" width="14" height="14"  onClick={handleHamburgerClick}/>
                 </div>   
             </div> 
             <nav className={styles.mobileNav} style={{display: isNavOpen ? '' : "none"}}>

@@ -10,7 +10,7 @@ export default function Collection() {
             <div className={styles.blendFlexContainer}>
                 <div className={styles.blendBox}>
                     <div>
-                     <Image  src="/../public/assets/home/desktop/image-gran-espresso.png" alt="coffee grounds" width="255" height="193"  className={styles.img} />   
+                     <Image  src="/assets/home/desktop/image-gran-espresso.png" alt="coffee grounds" width="255" height="193"  className={styles.img} />   
                     </div>
                     <div className={styles.textContainer}>
                       <h3 className={styles.blendName}>Gran Espresso</h3>
@@ -20,7 +20,7 @@ export default function Collection() {
                 </div>
                 <div className={styles.blendBox}>
                     <div>
-                       <Image  src="/../public/assets/home/desktop/image-planalto.png" alt="coffee grounds" width="255" height="193"  className={styles.img} /> 
+                       <Image  src="/assets/home/desktop/image-planalto.png" alt="coffee grounds" width="255" height="193"  className={styles.img} /> 
                     </div>
                     <div className={styles.textContainer}>
                         <h3 className={styles.blendName}>Planalto</h3>
@@ -30,7 +30,7 @@ export default function Collection() {
                 </div>
                 <div className={styles.blendBox}>
                     <div>
-                        <Image  src="/../public/assets/home/desktop/image-piccollo.png" alt="coffee grounds" width="255" height="193"  className={styles.img} />
+                        <Image  src="/assets/home/desktop/image-piccollo.png" alt="coffee grounds" width="255" height="193"  className={styles.img} />
                     </div>
                     <div className={styles.textContainer}>
                         <h3 className={styles.blendName}>Piccollo</h3>
@@ -39,7 +39,7 @@ export default function Collection() {
                 </div>
                 <div className={styles.blendBox}>
                     <div>
-                      <Image  src="/../public/assets/home/desktop/image-danche.png" alt="coffee grounds" width="255" height="193"  className={styles.img} />  
+                      <Image  src="/assets/home/desktop/image-danche.png" alt="coffee grounds" width="255" height="193"  className={styles.img} />  
                     </div>
                     <div className={styles.textContainer}>
                         <h3 className={styles.blendName}>Danche</h3>

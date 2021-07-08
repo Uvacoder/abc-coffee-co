@@ -8,13 +8,13 @@ export default function Hero() {
         <div className={styles.container}>
             <div className={styles.imgContainer}>
                 <div className={styles.img}>
-                    <Image  src="/../public/assets/home/desktop/image-hero-coffeepress.jpg" alt="coffee grinder" width="1280" height="600"   />
+                    <Image  src="/assets/home/desktop/image-hero-coffeepress.jpg" alt="coffee grinder" width="1280" height="600"   />
                 </div>
                 <div className={styles.imgTablet} >
-                    <Image  src="/../public/assets/home/tablet/image-hero-coffeepress.jpg" alt="coffee grinder" width="690" height="500"  />
+                    <Image  src="/assets/home/tablet/image-hero-coffeepress.jpg" alt="coffee grinder" width="690" height="500"  />
                 </div>
                 <div className={styles.imgMobile} >
-                    <Image  src="/../public/assets/home/mobile/image-hero-coffeepress.jpg" alt="coffee grinder" width="327" height="500"  />
+                    <Image  src="/assets/home/mobile/image-hero-coffeepress.jpg" alt="coffee grinder" width="327" height="500"  />
                 </div>
                 
             </div>

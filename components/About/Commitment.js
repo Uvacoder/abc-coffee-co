@@ -6,13 +6,13 @@ export default function Hero() {
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}>
-                <Image  src="/../public/assets/about/desktop/image-commitment.jpg" alt="coffee grinder" width="445" height="520"  className={styles.img} />
+                <Image  src="/assets/about/desktop/image-commitment.jpg" alt="coffee grinder" width="445" height="520"  className={styles.img} />
             </div>
             <div className={styles.imgContainerTablet}>
-                <Image  src="/../public/assets/about/tablet/image-commitment.jpg" alt="coffee grinder" width="281" height="470"  className={styles.img} />
+                <Image  src="/assets/about/tablet/image-commitment.jpg" alt="coffee grinder" width="281" height="470"  className={styles.img} />
             </div>
             <div className={styles.imgContainerMobile}>
-                <Image  src="/../public/assets/about/mobile/image-commitment.jpg" alt="coffee grinder" width="327" height="400"  className={styles.img} />
+                <Image  src="/assets/about/mobile/image-commitment.jpg" alt="coffee grinder" width="327" height="400"  className={styles.img} />
             </div>
             <div className={styles.textContainer}>
                 <h2>Our commitment</h2>
