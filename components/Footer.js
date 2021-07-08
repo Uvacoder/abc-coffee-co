@@ -6,10 +6,10 @@ import { useContext } from 'react'
 
 export default function Footer() {
 
-    const {dimmerStyle} = useContext(Context)
+    const {dimmerStyle, handleTurnDimmerOffClick, showOrderSummary} = useContext(Context)
 
     return (
-        <div className={styles.container} style={dimmerStyle}>
+        <div className={styles.container} style={dimmerStyle} onClick={showOrderSummary ? handleTurnDimmerOffClick : null}>
           <div className={styles.greyContainer} >
             <div className={styles.leftFlexContainer}>
                 <div>

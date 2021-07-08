@@ -6,10 +6,10 @@ import { useContext } from 'react'
 
 export default function Header() {
 
-    const {dimmerStyle, isNavOpen, handleHamburgerClick, dropDownNavClick} = useContext(Context)
+    const {dimmerStyle, isNavOpen, handleHamburgerClick, dropDownNavClick, handleTurnDimmerOffClick, showOrderSummary} = useContext(Context)
 
     return (
-        <div className={styles.container} style={dimmerStyle}>
+        <div className={styles.container} style={dimmerStyle} onClick={showOrderSummary ? handleTurnDimmerOffClick : null}>
             <div className={styles.leftFlexContainer}>
                 <Image src="/assets/shared/desktop/logo.svg" alt="coffee roasters logo" width="236" height="26"/>
             </div>
