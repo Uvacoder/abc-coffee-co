@@ -117,9 +117,16 @@
 }
 
 @media screen and (max-width: 500px) {
+    .imgContainerTablet {
+        display: none;
+    }
+
+    .imgContainerMobile {
+        display: block;
+    }
     .textContainer {
         width: 90%;
-        margin: -60% auto 0 auto;
+        margin: -100% auto 0 auto;
         text-align: center;
         h2 {
             font-size: 2.5rem;
@@ -130,20 +137,6 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .imgContainerTablet {
-        display: none;
-    }
-
-    .imgContainerMobile {
-        display: block;
-    }
-
-    .textContainer {
-        margin: -100% auto 0 auto;
-    }
-
-}
 
 @media screen and (max-width: 300px) {
     .textContainer {

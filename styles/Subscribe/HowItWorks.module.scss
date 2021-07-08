@@ -89,3 +89,66 @@
 .a:hover {
     filter: brightness(150%);
 }
+
+@media screen and (max-width: 1200px) {
+     .container {
+         width:100%; 
+     }
+}
+
+@media screen and (max-width: 1000px) {
+    .optionContainer {
+        justify-content: space-between;
+    }
+    .optionBox {
+        width: 31%;
+        h3 {
+            margin-top: -1rem;
+           font-size: 1.8rem;
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .container {
+        margin: 8rem auto 0 auto;
+    }
+
+    .lineBox {
+        display: none;
+    }
+
+    .grayContainer {
+        height: auto;
+    }
+
+    .optionContainer {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .optionBox {
+        width: 80%;
+        text-align: center;
+        margin: 2rem auto;
+        h1 {
+            width: 100%;
+        }
+        h3 {
+            width: 100%;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .optionBox {
+        width: 100%;
+    }
+}
