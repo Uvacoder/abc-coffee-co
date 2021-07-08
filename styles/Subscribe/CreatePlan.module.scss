@@ -57,5 +57,24 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 4rem 0;
+    }
+    .buttonContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .orderSummary {
+        padding: 1.5rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 
 
