@@ -101,22 +101,29 @@
 
     .imgMobile {
         display: block;
+        height: auto;
     }
 
     .textContainer {
         position: absolute;
-        top: 350px;
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .textContainer {
+        top: 47.5%;
     }
 }
 
 @media screen and (max-width: 350px) {
     .textContainer {
-        top: 250px;
+        top: 40%;
     }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 300px) {
     .textContainer {
-        top: 220px;
+        top: 35%;
     }
 }

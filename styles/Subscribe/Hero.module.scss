@@ -7,10 +7,14 @@
     padding-bottom: 5rem;
 }
 
-.img {
+.imgContainer {
+    img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
 }
+}
+
 
 .textContainer {
     width: 550px;
