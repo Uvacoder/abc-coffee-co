@@ -6,13 +6,13 @@ export default function Hero() {
     return (
         <div className={styles.container}>
             <div className={styles.img}>
-                <Image  src="/assets/about/desktop/image-hero-whitecup.jpg" alt="coffee grinder" width="1280" height="450" />
+                <Image  src="/assets/about/desktop/image-hero-whitecup.jpg" alt="whitecup image" width="1280" height="450" />
             </div>
             <div className={styles.imgTablet}>
-                <Image  src="/assets/about/tablet/image-hero-whitecup.jpg" alt="coffee grinder" width="690" height="400" />
+                <Image  src="/assets/about/tablet/image-hero-whitecup.jpg" alt="whitecup image" width="690" height="400" />
             </div>
             <div className={styles.imgMobile}>
-                <Image  src="/assets/about/mobile/image-hero-whitecup.jpg" alt="coffee grinder" width="500" height="600" />
+                <Image  src="/assets/about/mobile/image-hero-whitecup.jpg" alt="whitecup image" width="500" height="600" />
             </div>
 
             <div className={styles.textContainer}>

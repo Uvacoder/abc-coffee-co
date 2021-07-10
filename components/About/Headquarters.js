@@ -9,7 +9,7 @@ export default function Headquarters() {
                 <div className={styles.flexContainer}>
                     <div className={styles.countryBox}>
                         <div className={styles.imgContainer}>
-                            <Image  src="/assets/about/desktop/illustration-uk.svg" alt="coffee grinder" width="41" height="49"  className={styles.img} />
+                            <Image  src="/assets/about/desktop/illustration-uk.svg" alt="uk illustration" width="41" height="49"  className={styles.img} />
                         </div>
                         <h2>United Kingdom</h2>
                             <h4>68  Asfordby Rd</h4>
@@ -19,7 +19,7 @@ export default function Headquarters() {
                         </div>
                     <div className={styles.countryBox}>
                         <div className={styles.imgContainer}>
-                            <Image  src="/assets/about/desktop/illustration-canada.svg" alt="coffee grinder" width="51.5" height="50"  className={styles.img} />
+                            <Image  src="/assets/about/desktop/illustration-canada.svg" alt="canada illustration" width="51.5" height="50"  className={styles.img} />
                         </div>
                         <h2>Canada</h2>
                             <h4>1528  Eglinton Avenue</h4>
@@ -29,7 +29,7 @@ export default function Headquarters() {
                         </div>
                     <div className={styles.countryBox}>
                         <div className={styles.imgContainer}>
-                            <Image  src="/assets/about/desktop/illustration-australia.svg" alt="coffee grinder" width="49" height="44"  className={styles.img} />
+                            <Image  src="/assets/about/desktop/illustration-australia.svg" alt="australia illustration" width="49" height="44"  className={styles.img} />
                         </div>
                         <h2>Australia</h2>
                             <h4>36 Swanston Street</h4>

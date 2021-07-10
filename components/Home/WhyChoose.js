@@ -24,7 +24,7 @@ export default function WhyChoose() {
                     </div>
                     <div className={styles.featureBox}>
                         <div className={styles.imgContainer}>
-                          <Image  src="/assets/home/desktop/icon-gift.svg" alt="coffee bean icon" width="77" height="70"  className={styles.img} />  
+                          <Image  src="/assets/home/desktop/icon-gift.svg" alt="gift icon" width="77" height="70"  className={styles.img} />  
                         </div>
                         <div className={styles.textContainer}>
                            <h3>Exclusive benefits</h3>
@@ -33,7 +33,7 @@ export default function WhyChoose() {
                     </div>
                     <div className={styles.featureBox}>
                         <div className={styles.imgContainer}>
-                           <Image  src="/assets/home/desktop/icon-truck.svg" alt="coffee bean icon" width="72" height="50"  className={styles.img} /> 
+                           <Image  src="/assets/home/desktop/icon-truck.svg" alt="truck icon" width="72" height="50"  className={styles.img} /> 
                         </div>
                         <div className={styles.textContainer}>
                            <h3>Free shipping</h3>

@@ -7,13 +7,13 @@ export default function Hero() {
         <div className={styles.container}>
             <div className={styles.flexContainer}>
               <div className={styles.imgContainer}>
-                <Image  src="/assets/about/desktop/image-quality.jpg" alt="coffee grinder" width="445" height="474"  className={styles.img} />
+                <Image  src="/assets/about/desktop/image-quality.jpg" alt="quality image" width="445" height="474"  className={styles.img} />
             </div>
             <div className={styles.imgContainerTablet}>
-                <Image  src="/assets/about/tablet/image-quality.jpg" alt="coffee grinder" width="573" height="320"  className={styles.img} />
+                <Image  src="/assets/about/tablet/image-quality.jpg" alt="quality image" width="573" height="320"  className={styles.img} />
             </div>
             <div className={styles.imgContainerMobile}>
-                <Image  src="/assets/about/mobile/image-quality.jpg" alt="coffee grinder" width="279" height="153"  className={styles.img} />
+                <Image  src="/assets/about/mobile/image-quality.jpg" alt="quality image" width="279" height="153"  className={styles.img} />
             </div>
             <div className={styles.textContainer}>
                 <h2>Uncompromising quality</h2>
